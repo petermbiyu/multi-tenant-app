@@ -15,7 +15,7 @@ export async function analyzeWithGemini(
     const model = genAI.getGenerativeModel({ model: "gemini-2.5 -flash" });
 
     const prompts = {
-      summary: `Please provide a comprehensive summary of the following document.Include main points, key findings, and conclusions:\n\n${text}`,
+      summary: `Please provide a comprehensive summary of the following document. Include main points, key findings, and conclusions:\n\n${text}`,
       qa: `Based on the following document, generate 5 important questions and their answers:\n\n${text}`,
       sentiment: `Analyze the sentiment and tone of the following document. Provide overall sentiment (postive/negative/neutral) and key emotional tones detected:\n\n${text}`,
       entities: `Extract all named entities (people, organizations, locations, dates, etc.) from the following document:\n\n${text}`,
